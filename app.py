@@ -34,6 +34,9 @@ def info():
 @app.route("/predict", methods=["POST"])
 def predict_function():
     if request.method == "POST":
+        def tokenize(text):
+            tokenizer = TweetTokenizer()
+            return tokenizer.tokenize(text)
         model_path = open("./model/model_rf.joblib", "rb")
         model = load(model_path)
         input_payloads = request.json["inputs"]
