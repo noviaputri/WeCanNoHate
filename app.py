@@ -33,6 +33,8 @@ def info():
 @app.route("/predict", methods=["POST"])
 def predict_function():
     if request.method == "POST":
+        model_path = open("./model/model_rf.joblib", "rb")
+        model = load(model_path)
         input_payloads = request.json["inputs"]
         predictions = model.predict(input_payloads)
         json_result = pd.Series(predictions).to_json(orient="values")
@@ -47,8 +49,8 @@ def tokenize(text):
 
 
 if __name__ == "__main__":
-    model_path = open("./model/model_rf.joblib", "rb")
-    model = load(model_path)
-
+    def tokenize(text):
+        tokenizer = TweetTokenizer()
+        return tokenizer.tokenize(text)
     print("running service")
     app.run(debug=True)
