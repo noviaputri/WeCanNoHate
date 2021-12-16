@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="{{ url_for('static', filename='img/logoweb1.png') }}" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Hate and Abusive</title>
+  </head>
+  <body>
+    <!---header-->
+    <header>
+      <div class="wrapper">
+        <div><a class="title" href="{{ url_for('index') }}">We Can No Hate</a></div>
+        <div class="menu">
+          <ul>
+            <li><a class="active" href="{{ url_for('index') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('info') }}">Information</a></li>
+            <li><a href="{{ url_for('analisis') }}">Prediction</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!--Tampilan Tengah-->
+    <section class="logo"></section>
+    <section class="infoweb">
+      <div class="container">
+        <h2 id="text-title">Mengenai Web</h2>
+        <p>
+          Website ini ditujukan kepada masyarakat ataupun kawan-kawan sekalian
+          yang mengalami cyberbulying pada Media Sosial salah satunya yaitu
+          Twitter. Dengan adanya website ini diharapkan dapat membantu
+          menganalisis apakah kalimat yang diujarkan oleh pengguna twitter masuk
+          ke <i>Hate Speech dan Abusive Language</i>. Penggunaan Website ini
+          dengan memasukkan kalimat dari salah satu cuitan pengguna twitter
+          kemudian akan di analisis apakah masuk kata <i>hate speech</i> atau
+          <i>bukan hate speech</i>
+        </p>
+      </div>
+    </section>
+
+    <!--Team Capstone-->
+    <section id="team">
+      <div class="partner">
+        <div class="coloumn">
+          <h2>Meet Our Team</h2>
+          <p>Berikut ini merupakan Team Pembuat Website We Can No Hate</p>
+        </div>
+        <div class="partner-list">
+          <div class="partner-foto">
+            <img
+              class="partner-img"
+              src="{{ url_for('static', filename='img/Novia.jpg') }}"
+              alt="Foto partner team Novia"
+            />
+            <p>Novia Putri</p>
+            <div class="sosmed">
+              <ul class="sosmed-ul">
+                <li class="sosmed-li">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/noviaputry/"
+                  >
+                    <img class="sosmed-img" src="{{ url_for('static', filename='img/instagram.svg') }}" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://github.com/noviaputri">
+                    <img class="sosmed-img" src="{{ url_for('static', filename='img/github.svg') }}" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/novia-putri"
+                  >
+                    <img class="sosmed-img" src="{{ url_for('static', filename='img/linkedin.svg') }}"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="partner-foto">
+            <img
+              class="partner-img"
+              src="{{ url_for('static', filename='img/Lia.jpg') }}"
+              alt="Foto partner team Zulfa"
+            />
+            <p>Zulfalia Putri</p>
+            <div class="sosmed">
+              <ul class="sosmed-ul">
+                <li class="sosmed-li">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/zulfaliaputri/?hl=id"
+                  >
+                    <img class="sosmed-img" src="{{ url_for('static', filename='img/instagram.svg') }}" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://github.com/ZulfaliaPutri">
+                    <img class="sosmed-img" src="{{ url_for('static', filename='img/github.svg') }}" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/zulfaliaputri/"
+                  >
+                    <img class="sosmed-img" src="{{ url_for('static', filename='img/linkedin.svg') }}" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <small>Copyright &copy; 2021, We Can No Hate - Team CSD-115</small>
+      </div>
+    </footer>
+  </body>
+</html>
