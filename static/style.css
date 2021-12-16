@@ -286,13 +286,11 @@ footer {
     width: 90%;
   }
 
-  section {
-    display: block;
+  .wrapper img {
+    max-width: 90%;
   }
 
-  section img {
+  section {
     display: block;
-    width: 100%;
-    height: auto;
   }
 }
