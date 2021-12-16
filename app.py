@@ -50,8 +50,5 @@ def tokenize(text):
 
 
 if __name__ == "__main__":
-    def tokenize(text):
-        tokenizer = TweetTokenizer()
-        return tokenizer.tokenize(text)
     print("running service")
     app.run(debug=True)
