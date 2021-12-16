@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template, redirect, url_for
 from joblib import load
-from nltk.tokenize import TweetTokenizer
 import pandas as pd
 
 app = Flask(__name__)
@@ -37,14 +36,6 @@ def predict_function():
         predictions = model.predict(input_payloads)
         json_result = pd.Series(predictions).to_json(orient="values")
         return json_result
-
-###
-# this function is required by the model as it needs the text to be tokenized first with the same tokenization algorithm
-# before supplied to the machine learning model
-def tokenize(text):
-    tokenizer = TweetTokenizer()
-    return tokenizer.tokenize(text)
-
 
 if __name__ == "__main__":
     app.run(debug=True)
