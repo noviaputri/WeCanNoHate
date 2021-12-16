@@ -6,6 +6,7 @@ from flask_cors import CORS, cross_origin
 import pandas as pd
 from static.tokenize import tokenize
 
+
 app = Flask(__name__)
 
 # main route
