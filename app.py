@@ -50,5 +50,4 @@ def tokenize(text):
 
 
 if __name__ == "__main__":
-    print("running service")
     app.run(debug=True)
