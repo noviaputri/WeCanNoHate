@@ -32,6 +32,7 @@ textarea {
   margin-top: 1rem;
   width: 100%;
   resize: none;
+  box-sizing: border-box;
 }
 
 .submit-button {
