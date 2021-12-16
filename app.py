@@ -2,8 +2,6 @@ from flask import Flask, request, render_template, redirect, url_for
 from joblib import load
 from nltk.tokenize import TweetTokenizer
 import pandas as pd
-from static.tokenize import tokenize
-
 
 app = Flask(__name__)
 
