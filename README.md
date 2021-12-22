@@ -2,7 +2,7 @@
 
 ![Screenshot 2021-12-17 163057](https://user-images.githubusercontent.com/81318203/146514092-3dbac484-1a79-4b85-bbcf-9f735e007503.jpg)
 
-<p align=justify>WeCanNoHate adalah website yang dapat mendeteksi penggunaan kata atau kalimat yang mengandung hate speech dan abusive language. Pada project ini menggunakan Machine Learning dan Front-End yang dihubungkan dengan Back-End kemudian di deploy menggunakan Platform Heroku.</p>
+<p align=justify>WeCanNoHate adalah website yang dapat mendeteksi penggunaan kata atau kalimat yang mengandung hate speech dan abusive language. Pada project ini menggunakan Machine Learning, Front-End serta Back-End yang kemudian di deploy menggunakan Platform Heroku. Website ini terdiri dari 3 fitur utama yaitu Dashboard, Information, dan Prediction.</p>
 
 ## Deskripsi Project
 <p align=justify>Ujaran kebencian dan kata-kata kasar dapat ditemukan dalam beberapa cuitan pengguna twitter, yang mana hal ini bisa saja menimbulkan perpecahan di masyarakat dan berdampak buruk bagi psikologis korban. Hal tersebut juga termasuk salah satu bentuk cyberbullying, sehingga perlu untuk diatasi. Salah satu caranya yaitu dengan membuat proyek yang bertujuan untuk mengekstrak serta menganalisis tweet, apakah termasuk ke dalam kategori ujaran kebencian dan kata-kata kasar atau tidak.</p>
